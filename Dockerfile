@@ -9,9 +9,9 @@ RUN set -e; \
         software-properties-common \
     ; \
     apt-get update; \
-    add-apt-repository ppa:openjdk-r/ppa; \
+    apk add openjdk-8-jdk; \
     apt-get update; \
-    apt-get install openjdk-8-jdk; \
+    apt-get install openjdk-8-jdk -y; \
     apt-get clean; \
     rm -rf /var/tmp/* /tmp/* /var/lib/apt/lists/*
 
