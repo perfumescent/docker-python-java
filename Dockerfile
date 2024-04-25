@@ -7,7 +7,7 @@ RUN set -e; \
     apt-get install -y --no-install-recommends \
         software-properties-common \
     ; \
-    apt-get install -y --no-install-recommends openjdk-8-jdk; \
+    apk add openjdk11 \
     apt-get clean; \
     rm -rf /var/tmp/* /tmp/* /var/lib/apt/lists/*
 
