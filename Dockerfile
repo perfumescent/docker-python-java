@@ -9,7 +9,7 @@ RUN set -e; \
         software-properties-common \
     ; \
     apt-get update; \
-    apk add openjdk-8-jdk; \
+    apt-add-repository 'deb http://security.debian.org/debian-security stretch/updates main'; \
     apt-get update; \
     apt-get install openjdk-8-jdk -y; \
     apt-get clean; \
